@@ -13,7 +13,7 @@ app.use(bodyParser.json())
 
 
 app.get('/usuario', function(req, res) {
-    res.json('get Usuario');
+    res.json('get Usuario LOCAL!!!');
 });
 
 app.post('/usuario', function(req, res) {

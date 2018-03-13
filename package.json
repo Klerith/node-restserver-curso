@@ -10,7 +10,11 @@
     "author": "",
     "license": "ISC",
     "dependencies": {
+        "bcrypt": "^1.0.3",
         "body-parser": "^1.18.2",
-        "express": "^4.16.2"
+        "express": "^4.16.2",
+        "mongoose": "^5.0.9",
+        "mongoose-unique-validator": "^2.0.0",
+        "underscore": "^1.8.3"
     }
 }

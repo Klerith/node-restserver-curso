@@ -1,4 +1,4 @@
-# Node Rest Básico
+# Node Rest
 Este es el repositorio oficial del curso de Node
 
 ### Nota:

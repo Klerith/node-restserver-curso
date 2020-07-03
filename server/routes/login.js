@@ -88,11 +88,13 @@ app.post('/google', async(req, res) => {
 
     let googleUser = await verify(token)
         .catch(e => {
-            return res.status(403).json({
+            console.warn("Falló la verificación del token de Google")
+            res.status(403).json({
                 ok: false,
                 err: e
             });
         });
+    if(!googleUser) return;
 
 
     Usuario.findOne({ email: googleUser.email }, (err, usuarioDB) => {
